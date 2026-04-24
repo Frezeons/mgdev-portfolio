@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/********** Global Styles **********/
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@theme {
+  /* Catppuccin Mocha Karanlık Tema Renkleri */
+  --color-mocha-base: #1e1e2e;
+  --color-mocha-text: #cdd6f4;
+  --color-mocha-mantle: #181825;
+  --color-mocha-crust: #11111b;
+  --color-mocha-surface0: #313244;
+  --color-mocha-surface1: #45475a;
+  --color-mocha-green: #a6e3a1;
+  --color-mocha-blue: #89b4fa;
+  --color-mocha-mauve: #cba6f7;
+  --color-mocha-peach: #fab387;
+  --color-mocha-red: #f38ba8;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --color-macchiato-base: #24273a;
+  --color-macchiato-text: #cad3f5;
+  --color-macchiato-mantle: #1e2030;
+  --color-macchiato-crust: #181926;
+  --color-macchiato-surface0: #363a4f;
+  --color-macchiato-surface1: #494d64;
+  --color-macchiato-green: #a6da95;
+  --color-macchiato-blue: #8aadf4;
+  --color-macchiato-mauve: #c6a0f6;
+  --color-macchiato-peach: #f5a97f;
+  --color-macchiato-red: #ed8796;
+
+  --animate-terminal-blink: terminal-blink 1s infinite;
+
+  @keyframes terminal-blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
