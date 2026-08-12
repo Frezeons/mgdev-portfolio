@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Claude Code - bu makineye özel hook config (mutlak yollar içerir)
+.claude/
+
+# git worktree is akisi (kok CLAUDE.md)
+worktree/
